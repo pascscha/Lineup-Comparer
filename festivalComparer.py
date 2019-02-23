@@ -1,4 +1,3 @@
-import requests
 import urllib
 from bs4 import BeautifulSoup
 import re
@@ -31,8 +30,6 @@ def get_festival_urls(query):
     for event in events:
         out.append(url + event['about'])
     return out
-
-#
 
 
 def get_acts(url):
